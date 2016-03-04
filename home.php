@@ -1,26 +1,16 @@
-<style type="text/css">
-    .row .span12 h3 {
-        font-size: 40px;
-    }
-    .row .span12 h3 {
-        font-size: 60px;
-    }
-    body,td,th {
-        color: #F90;
-        font-weight: bold;
-    }
-</style>
+<?php
+include './conf/connect.php';
+?>
+<!-- PAGE CONTENT BEGINS -->
+<div class="alert alert-block alert-success">
+	<!--<button type="button" class="close" data-dismiss="alert">
+		<i class="ace-icon fa fa-times"></i>
+	</button>-->
 
-<div class="row">    
-    <div class="span12">
-        <h3> Selamat Datang, <?php
-            include './conf/connect.php';
-            echo $nama_log;
-            ?>.</h3>
+	<i class="ace-icon fa fa-check green"></i>
 
-        <center>
-
-        </center>
-    </div>
-    <!-- /.span4 -->
-</div> <!-- /.row -->
+	Welcome 
+	<strong class="red">
+		<?php echo $nama_log; ?>
+	</strong>
+</div>
