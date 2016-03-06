@@ -36,7 +36,7 @@ if (!ctype_alnum($username) OR !ctype_alnum($password)) {
 
 
 
-            header('location:index.php?r=home');
+            header('location:index.php?page=home');
             echo "<script>alert('Selamat datang $r[nama]');</script>";
         } else {
             echo "<script>alert('Login gagal! username dan  password tidak benar');history.back()</script>";

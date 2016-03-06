@@ -100,8 +100,8 @@ if (isset($_GET['status'])) {
                         ?>
                     </tbody>
                 </table>
-                <script src="js/jquery-1.7.2.min.js"></script> 
-                <script src="js/jquery.dataTables.js"></script>
+                <!--<script src="js/jquery-1.7.2.min.js"></script>--> 
+                <!--<script src="js/jquery.dataTables.js"></script>-->
                 <script>
                     $(document).ready(function() {
                         $('#hakakses').dataTable({
