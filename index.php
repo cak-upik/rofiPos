@@ -45,10 +45,8 @@ if ($username_log == null and $password_log == null) {
             <link rel="stylesheet" href="css/style.css">
             <!--<link rel="stylesheet" href="css/pages/dashboard.css">-->
             <link href="select2/select2.css" rel="stylesheet">
-            <link href="css/main.css" rel="stylesheet">       
-
+            <link href="css/main.css" rel="stylesheet">      
         </head>
-
         <body class="no-skin">
             <div id="navbar" class="navbar navbar-default">
                 <script type="text/javascript">
@@ -352,7 +350,6 @@ if ($username_log == null and $password_log == null) {
 
                         </div>
 
-
                         <?php
                         if (isset($_GET['page'])) {
                             if ($_GET['page'] == 'home') {
@@ -420,6 +417,7 @@ if ($username_log == null and $password_log == null) {
 
                             <div class="row">
                                 <div class="col-xs-12">
+                                    <!-- PAGE CONTENT BEGINS -->
                                     <div class="row">
                                         <?php
                                         if (isset($_GET['page'])) {
@@ -480,94 +478,93 @@ if ($username_log == null and $password_log == null) {
                                         }
                                         ?>
 
-                                    </div><!-- /.col -->
-                                </div><!-- /.row -->
+                                    </div><!-- /.row -->
 
-                                <!-- PAGE CONTENT ENDS -->
-                            </div><!-- /.col -->
-                        </div><!-- /.row -->
-                    </div><!-- /.page-content -->
-                </div>
-            </div><!-- /.main-content -->
+                                    <!-- PAGE CONTENT ENDS -->
+                                </div><!-- /.col -->
+                            </div><!-- /.row -->
+                        </div><!-- /.page-content -->
+                    </div>
+                </div><!-- /.main-content -->
 
-            <div class="footer">
-                <div class="footer-inner">
-                    <div class="footer-content">
-                        <span class="bigger-120">
-                            <span class="blue bolder">Ace</span>
-                            Application &copy; 2013-2014
-                        </span>
+                <div class="footer">
+                    <div class="footer-inner">
+                        <div class="footer-content">
+                            <span class="bigger-120">
+                                <span class="blue bolder">Ace</span>
+                                Application &copy; 2013-2014
+                            </span>
 
-                        &nbsp; &nbsp;
-                        <span class="action-buttons">
-                            <a href="#">
-                                <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-                            </a>
+                            &nbsp; &nbsp;
+                            <span class="action-buttons">
+                                <a href="#">
+                                    <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+                                </a>
 
-                            <a href="#">
-                                <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-                            </a>
+                                <a href="#">
+                                    <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+                                </a>
 
-                            <a href="#">
-                                <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-                            </a>
-                        </span>
+                                <a href="#">
+                                    <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-                <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-            </a>
-        </div><!-- /.main-container -->
-
+                <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                    <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+                </a>
+            </div><!-- /.main-container -->
 
             <!--<script src="js/jquery-1.7.2.min.js"></script>-->   
-        <script type="text/javascript" src="select2/select2.min.js"></script>    
-        <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
-        <script src="js/libs/jquery.ui.touch-punch.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script src="js/jquery.dataTables.js"></script>
+            <script type="text/javascript" src="select2/select2.min.js"></script>    
+            <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+            <script src="js/libs/jquery.ui.touch-punch.min.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
+            <script src="js/jquery.dataTables.js"></script>
 
-        <script src="js/libs/bootstrap/bootstrap.min.js"></script>
-        <script src="js/bootstrap-typeahead.js"></script>
-        <script src="js/Theme.js"></script>
-        <script src="js/Charts.js"></script>
-        <!--<script src="js/modal_bootstrap.js"></script>-->
+            <script src="js/libs/bootstrap/bootstrap.min.js"></script>
+            <script src="js/bootstrap-typeahead.js"></script>
+            <script src="js/Theme.js"></script>
+            <script src="js/Charts.js"></script>
+            <!--<script src="js/modal_bootstrap.js"></script>-->
 
-        <script src="./js/plugins/excanvas/excanvas.min.js"></script>
-        <script src="./js/plugins/flot/jquery.flot.js"></script>
-        <script src="./js/plugins/flot/jquery.flot.pie.js"></script>
-        <script src="./js/plugins/flot/jquery.flot.orderBars.js"></script>
-        <script src="./js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-        <script src="./js/plugins/flot/jquery.flot.resize.js"></script>
+            <script src="./js/plugins/excanvas/excanvas.min.js"></script>
+            <script src="./js/plugins/flot/jquery.flot.js"></script>
+            <script src="./js/plugins/flot/jquery.flot.pie.js"></script>
+            <script src="./js/plugins/flot/jquery.flot.orderBars.js"></script>
+            <script src="./js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+            <script src="./js/plugins/flot/jquery.flot.resize.js"></script>
 
-        <script src="js/demos/charts/line.js"></script>
-        <script src="js/demos/charts/donut.js"></script>
-        <script src="js/jquery.validate.js"></script>
-        <script src="js/jquery.numberformatter-1.2.3.js"></script>
+            <script src="js/demos/charts/line.js"></script>
+            <script src="js/demos/charts/donut.js"></script>
+            <script src="js/jquery.validate.js"></script>
+            <script src="js/jquery.numberformatter-1.2.3.js"></script>
 
-        <!-- basic scripts -->
-        <script type="text/javascript">
+            <!-- basic scripts -->
+            <script type="text/javascript">
                                 window.jQuery || document.write("<script src='assets/js/jquery.min.js'>" + "<" + "/script>");
-        </script>
-        <script type="text/javascript">
-            if ('ontouchstart' in document.documentElement)
-                document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
-        </script>
+            </script>
+            <script type="text/javascript">
+                if ('ontouchstart' in document.documentElement)
+                    document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+            </script>
 
-        <script src="assets/js/bootstrap.min.js"></script>		
-        <script src="assets/js/jquery-ui.custom.min.js"></script>
-        <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-        <script src="assets/js/jquery.easypiechart.min.js"></script>
-        <script src="assets/js/jquery.sparkline.min.js"></script>
-        <script src="assets/js/jquery.flot.min.js"></script>
-        <script src="assets/js/jquery.flot.pie.min.js"></script>
-        <script src="assets/js/jquery.flot.resize.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>		
+            <script src="assets/js/jquery-ui.custom.min.js"></script>
+            <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+            <script src="assets/js/jquery.easypiechart.min.js"></script>
+            <script src="assets/js/jquery.sparkline.min.js"></script>
+            <script src="assets/js/jquery.flot.min.js"></script>
+            <script src="assets/js/jquery.flot.pie.min.js"></script>
+            <script src="assets/js/jquery.flot.resize.min.js"></script>
 
-        <!-- ace scripts -->
-        <script src="assets/js/ace-elements.min.js"></script>
-        <script src="assets/js/ace.min.js"></script>
+            <!-- ace scripts -->
+            <script src="assets/js/ace-elements.min.js"></script>
+            <script src="assets/js/ace.min.js"></script>
+        </body>
     </html>
     <?php
 } 
