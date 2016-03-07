@@ -41,7 +41,7 @@ if ($username_log == null and $password_log == null) {
 
             <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.21.custom.css">	
 
-            <link rel="stylesheet" href="css/application.css">
+            <!--<link rel="stylesheet" href="css/application.css">-->
             <!--<link rel="stylesheet" href="css/pages/dashboard.css">-->
             <link href="select2/select2.css" rel="stylesheet">
             <link href="css/main.css" rel="stylesheet">       

@@ -46,25 +46,39 @@ if (isset($_GET['status'])) {
 //    if ($page == 'view') {
         ?>
         <!--        <p><button onClick="document.location = 'index.php?r=hak_akses&page=create';" class="btn btn-warning"><i class="icon-plus-sign icon-white"></i> Tambah</button></p>-->
+        <div class="alert alert-warning" id="frmerror" style="display: none">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <label>Harap Isi Field Yang Kosong</label>                
+        </div>    
+
+        <div class="alert alert-success" id="frmsuccess" style="display: none">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <label>Proses Penyimpanan Data Berhasil</label>                
+        </div>
+
+        <div class="alert alert-danger" id="frmfailed" style="display: none">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <label>Proses Penyimpanan Data Gagal</label>
+        </div>
+
         <div class="alert alert-info">
             <button id="btnTambah" class="btn btn-warning">Tambah</button>
         </div>
 
         <div id="frmTambah" style="display: none">
             <h2>Tambah Data</h2>
-            <form action="module/hak_akses/input.proses.php" method="POST" class="form-horizontal" id="create">
+            <form action="" class="form-horizontal" id="create">
 
                 <div class="control-group">
                     <br/>
                     <label class="control-label">Hak Akses *</label>
                     <div class="controls">
-                        <input type="text" class="span4" id="hak_akses" name="hak_akses" value="">
+                        <input type="text" class="span4" id="txtHakAkses" name="txtHakAkses">
                     </div>
                 </div>
 
-
                 <div class="form-actions">
-                    <input type="submit" class="btn btn-primary btn-large" value="Simpan" />
+                    <input type="submit" name="simpan" id="btnSimpan" class="btn btn-primary btn-large" value="Simpan" />
 
                 </div>
             </form>
