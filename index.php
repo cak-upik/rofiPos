@@ -42,6 +42,7 @@ if ($username_log == null and $password_log == null) {
             <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.21.custom.css">	
 
             <!--<link rel="stylesheet" href="css/application.css">-->
+            <link rel="stylesheet" href="css/style.css">
             <!--<link rel="stylesheet" href="css/pages/dashboard.css">-->
             <link href="select2/select2.css" rel="stylesheet">
             <link href="css/main.css" rel="stylesheet">       
@@ -122,7 +123,8 @@ if ($username_log == null and $password_log == null) {
             <div class="main-container" id="main-container">
                 <script type="text/javascript">
                     try {
-                        ace.settings.check('main-container', 'fixed')} catch (e) {
+                        ace.settings.check('main-container', 'fixed')
+                    } catch (e) {
                     }
                 </script>
 
@@ -150,7 +152,7 @@ if ($username_log == null and $password_log == null) {
 
                     while ($set = mysql_fetch_array($privilege)) {
 
-                         if ($set['hak_akses'] == 'kelola_master_hak_akses') {
+                        if ($set['hak_akses'] == 'kelola_master_hak_akses') {
                             $hak_akses = '<li><a href="index.php?page=hak_akses">Hak Akses</a></li>';
                         }
                         if ($set['hak_akses'] == 'kelola_master_privilege') {
@@ -335,7 +337,8 @@ if ($username_log == null and $password_log == null) {
                         <div class="breadcrumbs" id="breadcrumbs">
                             <script type="text/javascript">
                                 try {
-                                    ace.settings.check('breadcrumbs', 'fixed')} catch (e) {
+                                    ace.settings.check('breadcrumbs', 'fixed')
+                                } catch (e) {
                                 }
                             </script>
 
@@ -418,65 +421,64 @@ if ($username_log == null and $password_log == null) {
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="row">
-                    <?php
-                    
-                    if (isset($_GET['page'])) {
-                            
-                        if ($_GET['page'] == 'home') {
-                            include"home.php";
-                        } elseif ($_GET['page'] == 'privilege') {
-                            include"module/privilege/main.php";
-                        } elseif ($_GET['page'] == 'hak_akses') {
-                            include"module/hak_akses/main.php";
-                        } elseif ($_GET['page'] == 'color') {
-                            include"module/color/main.php";
-                        } elseif ($_GET['page'] == 'unit') {
-                            include"module/unit/main.php";
-                        } elseif ($_GET['page'] == 'leasing') {
-                            include"module/leasing/main.php";
-                        } elseif ($_GET['page'] == 'suplier') {
-                            include"module/suplier/main.php";
-                        } elseif ($_GET['page'] == 'unit') {
-                            include"module/unit/main.php";
-                        } elseif ($_GET['page'] == 'detailunit') {
-                            include"module/detailunit/main.php";
-                        } elseif ($_GET['page'] == 'provinsi') {
-                            include"module/provinsi/main.php";
-                        } elseif ($_GET['page'] == 'kota') {
-                            include"module/kota/main.php";
-                        } elseif ($_GET['page'] == 'biayasr') {
-                            include"module/biayasr/main.php";
-                        } elseif ($_GET['page'] == 'pegawai') {
-                            include"module/pegawai/main.php";
-                        } elseif ($_GET['page'] == 'jabatan') {
-                            include"module/jabatan/main.php";
-                        } elseif ($_GET['page'] == 'ro') {
-                            include"module/stok_masuk/main.php";
-                        } elseif ($_GET['page'] == 'stok') {
-                            include"module/stok/main.php";
-                        } elseif ($_GET['page'] == 'retur') {
-                            include"module/retur/main.php";
-                        } elseif ($_GET['page'] == 'pembelianunit') {
-                            include"module/pembelianunit/main.php";
-                        } elseif ($_GET['page'] == 'pengirimanunit') {
-                            include"module/pengirimanunit/main.php";
-                        } elseif ($_GET['page'] == 'customer') {
-                            include"module/customer/main.php";
-                        } elseif ($_GET['page'] == 'historycustomer') {
-                            include"module/historycustomer/main.php";
-                        } elseif ($_GET['page'] == 'penjualan') {
-                            include"module/penjualan/main.php";
-                        } elseif ($_GET['page'] == 'lap_penjualan') {
-                            include"module/lap_penjualan/main.php";
-                        } elseif ($_GET['page'] == 'paket_service') {
-                            include"module/paket_service/main.php";
-                        } elseif ($_GET['page'] == 'lap_pengirimanunit') {
-                            include"module/lap_pengirimanunit/main.php";
-                        }
-                    } else {
-                        include"error_page/error.php";
-                    }
-                    ?>
+                                        <?php
+                                        if (isset($_GET['page'])) {
+
+                                            if ($_GET['page'] == 'home') {
+                                                include"home.php";
+                                            } elseif ($_GET['page'] == 'privilege') {
+                                                include"module/privilege/main.php";
+                                            } elseif ($_GET['page'] == 'hak_akses') {
+                                                include"module/hak_akses/main.php";
+                                            } elseif ($_GET['page'] == 'color') {
+                                                include"module/color/main.php";
+                                            } elseif ($_GET['page'] == 'unit') {
+                                                include"module/unit/main.php";
+                                            } elseif ($_GET['page'] == 'leasing') {
+                                                include"module/leasing/main.php";
+                                            } elseif ($_GET['page'] == 'suplier') {
+                                                include"module/suplier/main.php";
+                                            } elseif ($_GET['page'] == 'unit') {
+                                                include"module/unit/main.php";
+                                            } elseif ($_GET['page'] == 'detailunit') {
+                                                include"module/detailunit/main.php";
+                                            } elseif ($_GET['page'] == 'provinsi') {
+                                                include"module/provinsi/main.php";
+                                            } elseif ($_GET['page'] == 'kota') {
+                                                include"module/kota/main.php";
+                                            } elseif ($_GET['page'] == 'biayasr') {
+                                                include"module/biayasr/main.php";
+                                            } elseif ($_GET['page'] == 'pegawai') {
+                                                include"module/pegawai/main.php";
+                                            } elseif ($_GET['page'] == 'jabatan') {
+                                                include"module/jabatan/main.php";
+                                            } elseif ($_GET['page'] == 'ro') {
+                                                include"module/stok_masuk/main.php";
+                                            } elseif ($_GET['page'] == 'stok') {
+                                                include"module/stok/main.php";
+                                            } elseif ($_GET['page'] == 'retur') {
+                                                include"module/retur/main.php";
+                                            } elseif ($_GET['page'] == 'pembelianunit') {
+                                                include"module/pembelianunit/main.php";
+                                            } elseif ($_GET['page'] == 'pengirimanunit') {
+                                                include"module/pengirimanunit/main.php";
+                                            } elseif ($_GET['page'] == 'customer') {
+                                                include"module/customer/main.php";
+                                            } elseif ($_GET['page'] == 'historycustomer') {
+                                                include"module/historycustomer/main.php";
+                                            } elseif ($_GET['page'] == 'penjualan') {
+                                                include"module/penjualan/main.php";
+                                            } elseif ($_GET['page'] == 'lap_penjualan') {
+                                                include"module/lap_penjualan/main.php";
+                                            } elseif ($_GET['page'] == 'paket_service') {
+                                                include"module/paket_service/main.php";
+                                            } elseif ($_GET['page'] == 'lap_pengirimanunit') {
+                                                include"module/lap_pengirimanunit/main.php";
+                                            }
+                                        } else {
+                                            include"error_page/error.php";
+                                        }
+                                        ?>
 
                                     </div><!-- /.col -->
                                 </div><!-- /.row -->
@@ -520,7 +522,7 @@ if ($username_log == null and $password_log == null) {
         </div><!-- /.main-container -->
 
 
-        <!--<script src="js/jquery-1.7.2.min.js"></script>-->   
+            <!--<script src="js/jquery-1.7.2.min.js"></script>-->   
         <script type="text/javascript" src="select2/select2.min.js"></script>    
         <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
         <script src="js/libs/jquery.ui.touch-punch.min.js"></script>
@@ -547,13 +549,13 @@ if ($username_log == null and $password_log == null) {
 
         <!-- basic scripts -->
         <script type="text/javascript">
-                                            window.jQuery || document.write("<script src='assets/js/jquery.min.js'>" + "<" + "/script>");
+                                window.jQuery || document.write("<script src='assets/js/jquery.min.js'>" + "<" + "/script>");
         </script>
         <script type="text/javascript">
             if ('ontouchstart' in document.documentElement)
                 document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
         </script>
-        
+
         <script src="assets/js/bootstrap.min.js"></script>		
         <script src="assets/js/jquery-ui.custom.min.js"></script>
         <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
